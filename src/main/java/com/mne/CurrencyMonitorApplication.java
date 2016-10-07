@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Import;
 
 import com.mne.client.CurrencyMonitorClient;
 import com.mne.server.configuration.ExchangeRateConfiguration;
+import com.mne.server.configuration.MVCConfiguration;
 
 
 /**
@@ -20,7 +21,8 @@ import com.mne.server.configuration.ExchangeRateConfiguration;
 @SpringBootApplication
 @Import(
         {
-            ExchangeRateConfiguration.class
+            ExchangeRateConfiguration.class,
+            MVCConfiguration.class
         }		
 )
 public class CurrencyMonitorApplication {

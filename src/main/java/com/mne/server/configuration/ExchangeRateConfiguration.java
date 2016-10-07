@@ -12,7 +12,7 @@ import com.google.common.collect.Lists;
 /**
  * exchangerate configuration
  * 
- * component configuraiton
+ * component configuration for external services
  * 
  * @author Moritz Neuhaeuser<moritz.neuhaeuser@gmail.com>
  * @since(0.1.0)
