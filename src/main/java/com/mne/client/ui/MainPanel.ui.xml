@@ -1,0 +1,38 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:b="urn:import:com.github.gwtbootstrap.client.ui"
+	xmlns:b2="urn:import:com.github.gwtbootstrap.datepicker.client.ui"
+	>
+	<!-- import for i18n messages -->
+	<ui:with type="com.mne.client.resource.Messages" field="m" />
+	<g:HTMLPanel>
+		<b:PageHeader text="{m.currencyMonitor}" subtext="{m.currencyMonitorSimple}"> 					
+		</b:PageHeader>
+		<b:Row>
+			<b:Column size="7">
+				<b:ControlGroup>
+					<b:ControlLabel><g:Label text="{m.chooseCurrency}"></g:Label></b:ControlLabel>
+					<b:Controls>
+						<g:SuggestBox ui:field="currencies" />
+					</b:Controls>
+				</b:ControlGroup>
+			</b:Column>
+			<b:Column size="5">
+				<b:ControlGroup>
+					<b:ControlLabel><g:Label text="{m.chooseDate}"></g:Label></b:ControlLabel>
+					<b:Controls>
+						<b2:DateBox ui:field="historicDate" format="yyyy-mm-dd"
+							autoClose="true" />
+					</b:Controls>
+				</b:ControlGroup>
+			</b:Column>
+		</b:Row>
+		<b:Row>
+			<b:Column size="12">
+				<b:DataGrid ui:field="currencyRatesGrid" bordered="true"
+					condensed="true" striped="true" height="400px" width="100%" />
+			</b:Column>
+		</b:Row>
+	</g:HTMLPanel>
+</ui:UiBinder> 

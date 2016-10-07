@@ -1,0 +1,27 @@
+# m2 stuff
+.classpath
+.project
+.settings
+.mymetadata
+.externalToolBuilders
+target
+pom.xml.versionsBackup
+velocity.log
+#META-INF
+/WebRoot/META-INF/MANIFEST.MF
+*.orig
+*~
+.springBeans
+.directory
+/bin/
+.ten-project
+*.log
+node
+node_modules
+bower_components
+src/main/resources/static/
+src/main/resources/static/*
+/.apt_generated/
+.factorypath
+/target/
+src/main/resources/application_custom.yml

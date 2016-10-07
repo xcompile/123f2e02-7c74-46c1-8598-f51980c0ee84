@@ -1,0 +1,30 @@
+*.css	text
+*.java	text diff=java
+*.jsp	text diff=java
+*.html	text diff=html
+*.js	text
+*.xml	text
+*.aj	text diff=java
+*.md	text
+*.lst	text
+*.sh	text
+*.txt	text
+
+*.json		text
+*.properties	text
+MANIFEST.MF	text
+*.SHA1	text
+*.MD5	text
+
+*.class	binary
+*.jar	binary
+*.war	binary
+*.ear	binary
+*.gif	binary
+*.png	binary
+*.jpg	binary
+*.ico	binary
+*.exe	binary
+
+
+*.java filter=spabs

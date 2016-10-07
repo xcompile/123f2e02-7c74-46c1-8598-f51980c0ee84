@@ -3,7 +3,7 @@
 ## What to Expect
 A simple currency monitor
 - show currencies with different base currency
-- data from https://openexchangerates.org/
+- source [`openexchangerates.org`](http://openexchangerates.org/)
 - show historic currencies
 
 ## How To Run
