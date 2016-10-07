@@ -18,7 +18,9 @@ mvn clean package spring-boot:run -Drest.api.apiKey=<APIKEY>
 Build docker image initially, run
 ```shell
 mvn clean package docker:build
-Run: docker run  --rm -e "REST_API_APIKEY=<APIKEY>" -p 8080:8080 mne/currencymonitor 
+docker run  --rm -e "REST_API_APIKEY=<APIKEY>" -p 8080:8080 mne/currencymonitor 
 ```
+
+open [`localhost:8080/`](http://localhost:8080/)
 
 It is my very first GWT application, hope you enjoy
